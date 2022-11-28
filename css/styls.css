@@ -437,8 +437,8 @@ fill: currentColor;
 }
 
  .timse-soc-link:hover {
-
-  fill: var(--accent-color);
+   background-color: #2196F3;
+  fill:var(--fon-body-color);
  }
   
  .timse-soc-items {
