@@ -713,14 +713,7 @@ fill: currentColor;
   align-items: center;
  
 } 
-/* .client-bord { 
-  display: flex;
-  justify-content: center;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-}*/
+
 .kleinc-list + .kleinc-list {
   margin-left: 30px;
 }
@@ -756,24 +749,33 @@ fill: currentColor;
 
 
  /* приєднуйтесь */
+ .footer-soc-box {
+  display: block;
+  
+ }
  
- .footr-soc-box {
+  
+  
+
  
-} 
-.footr-soc-list {
- display: flex;
+ .footr-soc-list { 
+  display: flex;
   justify-content: center;
-  margin-left: 300px;
-  margin-bottom: 100px;
-}
+  align-items: center;
+ }
+  
+
 .footr-title {
+  display:inline-block;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;  
   letter-spacing: 0.03em;
   color: #FFFFFF; 
-  text-align:start
-  d
+  text-align:left
+  
+  
 }
 .footr-soc-items {
  
@@ -791,7 +793,7 @@ fill: currentColor;
 display: flex;
  width: 100%;
  height: 100%;
- background-color: #1c1e2f;
+ background-color: #2d2d2f;
  border-radius: 50%;
  justify-content: center;
  align-items: center;
@@ -807,8 +809,18 @@ display: flex;
  
 .footr-soc-items {
  background-position: center;
- display: block;
+
  
  
 }
-
+.info-address {
+  display: block;
+}
+.footr-soc-box {
+  display: block;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+.aside .footer-icon-box {
+display: flex;
+}
