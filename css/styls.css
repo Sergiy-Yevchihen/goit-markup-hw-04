@@ -327,9 +327,10 @@
   /* work */
   
   .list-ebayt.list{
- display: flex;
+   display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 94px;
   }
   
  .ebayt-foto:not(:last-child) {
@@ -435,8 +436,9 @@
 .timse-soc-icons {
 fill: currentColor;
 }
-
- .timse-soc-link:hover {
+ 
+ .timse-soc-link:hover,
+ .timse-soc-link:focus {
    background-color: #2196F3;
   fill:var(--fon-body-color);
  }
@@ -578,10 +580,6 @@ fill: currentColor;
    
     padding-top: 94px;
   }
-
-  
-  
-  
   
   .list.portfolio {
     display: flex;
@@ -589,7 +587,6 @@ fill: currentColor;
     margin-bottom: 48px;
     
   }
- 
   
  
   .list.portfolio .btn-list + .btn-list {
@@ -705,49 +702,105 @@ fill: currentColor;
   color: #212121;
  text-align: center;
  margin-bottom: 50px;
+ 
 }
 
 .client-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+ width: 100%;
+ height: 100%;
  
 } 
 
 .kleinc-list + .kleinc-list {
   margin-left: 30px;
 }
+/* .clients .link {
+    display: flex;
+    border: 1px solid #ECECEC;
+    border-color: rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    min-width: 170px;
+    min-height: 92px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+}
 
+.clients .item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+    border-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+
+}
+
+.clients .icon {
+    fill: inherit;
+    width: 106px;
+    height: 60px;
+    /* fill: var(--color-icon); */
+ 
 
 .kleinc-list {
   display: flex;
-  margin: auto;
+ 
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
-  fill: var(--fon-body-color);
   width: 170px;
-  height: 92px;
-  fill: #757575;
-}
+  height: 90px;
+  
+ }
+
  .kleinc-logo link {
-  display: flex;
+  fill: #AFB1B8;
+ }
+/* isplay: flex;
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #AFB1B8;
   
+  border: 1px solid #757575;
+  border-radius: 4px;
+  background: #AFB1B8;
+  fill: #757575; */
+ .kleinc-logo link {
+  
+
+  display: flex;
+  border: 1px solid #AFB1B8;
+  border-color: rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  min-width: 170px;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
  } 
  
- .kleinc-logo:hover {
-  fill: #188CE8;
-   color: #4d3f94;
+ .kleinc-logo:hover,
+ .kleinc-logo:focus {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+  
+  fill: #2196F3;
+   
  }
 
-
+  .klent-logo .link{ 
+    fill: currentColor;
+    
+    fill: inherit;
+    width: 106px;
+    height: 60px;
+  }
+  /* fill: currentColor; */
  /* приєднуйтесь */
  .footer-soc-box {
   display: block;
@@ -793,7 +846,7 @@ fill: currentColor;
 display: flex;
  width: 100%;
  height: 100%;
- background-color: #2d2d2f;
+ background-color: rgba(255, 255, 255, 0.1);
  border-radius: 50%;
  justify-content: center;
  align-items: center;
@@ -802,9 +855,10 @@ display: flex;
 
 
 
-.footr-soc-link:hover {
+.footr-soc-link:hover,
+.footr-soc-link:focus {
   background-color: #2196F3;
- fill:var(--futer-text-color);
+ 
 }
  
 .footr-soc-items {
